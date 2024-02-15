@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     try{
                         base_image.setImageURI(Uri.parse(items.get(activeItem_id).id_image));
                     } catch(Exception e) {
-                        Toast.makeText(MainActivity.this, "Рекомендации закончились", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Рекомендации еще будут", Toast.LENGTH_SHORT).show();
                         activeItem_id = 0;
                         base_image.setImageURI(Uri.parse(items.get(activeItem_id).id_image));
                     }
