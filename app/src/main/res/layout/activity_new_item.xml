@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/ListLikesItems"
+        android:layout_width="410dp"
+        android:layout_height="118dp"
+
+        android:layout_marginTop="416dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListLikesItems" />
+
+    <ImageView
+        android:id="@+id/ChoiceImage"
+        android:layout_width="117dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_likeItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/textView_category"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:hint="Категория"
+        app:layout_constraintBottom_toTopOf="@+id/button_likeItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <EditText
+        android:id="@+id/textView_nameItem"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:hint="Название"
+        app:layout_constraintBottom_toTopOf="@+id/textView_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <Button
+        android:id="@+id/DependetsAdd_btn"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="52dp"
+        android:text="На главное окно"
+        app:layout_constraintBottom_toTopOf="@+id/ChoiceImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/ChoiceImage_btn" />
+
+    <Button
+        android:id="@+id/ChoiceImage_btn"
+        android:layout_width="173dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:text="Выбрать изображение"
+        app:layout_constraintBottom_toTopOf="@+id/button_likeItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <Button
+        android:id="@+id/button_likeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить желаемый предмет"
+        app:layout_constraintBottom_toTopOf="@+id/ListLikesItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
